@@ -186,7 +186,7 @@ export default Plugin.define({
     const mutedColor = () => textTokens.muted ?? textTokens.base
 
     const unregister = context.ui.slot({
-      append: "sidebar.content",
+      prepend: "sidebar.content",
       render: () => (
         <Show when={isGLMModel()}>
           <Show
